@@ -18,14 +18,6 @@ public class GreetingContoller {
         this.config = config;
     }
 
-    /* @Value("${greeting-service.greeting}")
-        private String greeting;
-
-
-        @Value("${greeting-service.default-name")
-        private String defauldName;*/
-
-
     @GetMapping({"", "/"})
     public String getGreeting(
         @RequestParam(required = false) String name){
